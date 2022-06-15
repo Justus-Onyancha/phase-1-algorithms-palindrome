@@ -1,5 +1,22 @@
 function isPalindrome(word) {
   // Write your algorithm here
+
+  let leftIndex = 0;
+  let rightIndex = word.length - 1
+  while (leftIndex < rightIndex){
+    if (word[leftIndex] !== word[rightIndex]) 
+      return false
+    leftIndex++;
+    rightIndex--;
+
+  }
+  return true;
+
+  // const reverseword = word.split('').reverse().join('');
+  // if (word === reverseword) {
+  //   return true;
+  // }else
+  //   return false;
 }
 
 /* 
